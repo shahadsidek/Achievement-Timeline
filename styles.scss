@@ -1,8 +1,10 @@
 //* Global Variable *//
 $body-bg: #1e1e2f;
-$font-color: #ffffff;
+$font-color: #fcf9f9;
 $timeline-body-bg: #27293d;
-
+$timeline-bg: #d4d4d4;
+$border-color: rgb(10, 72, 87);
+$icon-color: #847878;
 
 * {
     padding: 0px;
@@ -18,53 +20,102 @@ $timeline-body-bg: #27293d;
 
     .timeline {
         width: 4px;
-        border:1px solid white;
+        border: 1px solid white;
         position: relative;
-        right: 50px;
+        right: 45px;
+        background-color: $timeline-bg ;
+    }
+
+    .arrow-left {
+        position: relative;
+        top: 35px;
+        left: 9px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid $timeline-body-bg;
+    }
+
+    .thumbnail1 object {
+        background-image: url('./certificates/HTML\,_CSS_and_JavaScript-HTML\,_CSS_and_JavaScript_Course_Certificate_11588-page-0.jpg');
+        width: 80px;
+        height: 105px;
+        background-size: cover;
+        background-color: $timeline-body-bg ;
+    }
+
+    .thumbnail2 object {
+        background-image: url('./certificates/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Data_Structure_and_Algorithms_with_Python_Course_Certificate_140101672940250.jpg');
+        width: 80px;
+        height: 105px;
+        background-size: cover;
+    }
+
+    .thumbnail3 object {
+        background-image: url('./certificates/Python-SQL.jpg');
+        width: 80px;
+        height: 105px;
+        background-size: cover;
     }
 
     .month-container {
         // border: 5px solid rgb(7, 7, 245);
         display: flex;
 
-
         .fav-icon {
-            border: 3px solid red;
+            border: 5px solid rgb(48, 28, 62);
             background-color: $body-bg;
-            color: $font-color;
-            width: auto;
-            height:50%;
+            color: $icon-color;
+            height: 20%;
             padding: 10px;
             margin: 15px;
             justify-content: center;
             align-content: center;
             border-radius: 50%;
+            z-index: 10;
 
             i {
                 font-size: 2.4em;
             }
         }
+    }
 
-        .body-container {
-            border: 5px solid rgb(10, 72, 87);
-            width: 75%;
+    .body-container {
+        border: 3px solid $border-color;
+        width: 75%;
+        background-color: $timeline-body-bg;
+        color: $font-color;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+
+        p {
+            opacity: 0.75;
+            letter-spacing: 1px;
+            font-weight: 100;
+            padding: 2px;
+            padding-bottom: 15px;
             background-color: $timeline-body-bg;
-            color: $font-color;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 5px;
-
-            p {
-                opacity: 0.75;
-                letter-spacing: 1px;
-                font-weight: 100;
-            }
-
-            h4,
-            h6 {
-                letter-spacing: 1px;
-                font-weight: 300;
-            }
         }
+
+        h4,
+        h6 {
+            letter-spacing: 1px;
+            font-weight: 300;
+            padding: 2px;
+            background-color: $timeline-body-bg;
+        }
+
+        h4 {
+            font-size: 25px;
+            padding-bottom: 4px;
+        }
+
+        h6 {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
     }
 }

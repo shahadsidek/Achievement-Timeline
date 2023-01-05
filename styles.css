@@ -11,34 +11,72 @@
     width: 4px;
     border: 1px solid white;
     position: relative;
-    right: 50px; }
+    right: 45px;
+    background-color: #d4d4d4; }
+  .container .arrow-left {
+    position: relative;
+    top: 35px;
+    left: 9px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #27293d; }
+  .container .thumbnail1 object {
+    background-image: url("./certificates/HTML,_CSS_and_JavaScript-HTML,_CSS_and_JavaScript_Course_Certificate_11588-page-0.jpg");
+    width: 80px;
+    height: 105px;
+    background-size: cover;
+    background-color: #27293d; }
+  .container .thumbnail2 object {
+    background-image: url("./certificates/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Data_Structure_and_Algorithms_with_Python_Course_Certificate_140101672940250.jpg");
+    width: 80px;
+    height: 105px;
+    background-size: cover; }
+  .container .thumbnail3 object {
+    background-image: url("./certificates/Python-SQL.jpg");
+    width: 80px;
+    height: 105px;
+    background-size: cover; }
   .container .month-container {
     display: flex; }
     .container .month-container .fav-icon {
-      border: 3px solid red;
+      border: 5px solid #301c3e;
       background-color: #1e1e2f;
-      color: #ffffff;
-      width: auto;
-      height: 50%;
+      color: #847878;
+      height: 20%;
       padding: 10px;
       margin: 15px;
       justify-content: center;
       align-content: center;
-      border-radius: 50%; }
+      border-radius: 50%;
+      z-index: 10; }
       .container .month-container .fav-icon i {
         font-size: 2.4em; }
-    .container .month-container .body-container {
-      border: 5px solid #0a4857;
-      width: 75%;
-      background-color: #27293d;
-      color: #ffffff;
-      padding: 20px;
-      margin: 10px; }
-      .container .month-container .body-container p {
-        opacity: 0.75;
-        letter-spacing: 1px;
-        font-weight: 100; }
-      .container .month-container .body-container h4,
-      .container .month-container .body-container h6 {
-        letter-spacing: 1px;
-        font-weight: 300; }
+  .container .body-container {
+    border: 3px solid #0a4857;
+    width: 75%;
+    background-color: #27293d;
+    color: #fcf9f9;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px; }
+    .container .body-container p {
+      opacity: 0.75;
+      letter-spacing: 1px;
+      font-weight: 100;
+      padding: 2px;
+      padding-bottom: 15px;
+      background-color: #27293d; }
+    .container .body-container h4,
+    .container .body-container h6 {
+      letter-spacing: 1px;
+      font-weight: 300;
+      padding: 2px;
+      background-color: #27293d; }
+    .container .body-container h4 {
+      font-size: 25px;
+      padding-bottom: 4px; }
+    .container .body-container h6 {
+      font-size: 20px;
+      padding-bottom: 10px; }
