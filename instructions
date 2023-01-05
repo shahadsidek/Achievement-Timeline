@@ -1,0 +1,12 @@
+in this project, we write in css and it gets converted to css
+we need to install the following 
+
+npm install node-sass
+
+and then we modify the package.json to be 
+  "scripts":{
+    "watch:scss": "node-sass -w styles.scss styles.css" 
+  },
+
+
+npm run watch:scss
